@@ -1,0 +1,293 @@
+{
+    "package": "FilePreviews",
+    "tagline": "FilePreviews API",
+    "description": "FilePreviews is an API that produces beautiful previews,optical character recognition and metadata from any file.Extract, analyze, and present data from your files.",
+    "image": "https:\/\/logo.clearbit.com\/filepreviews.io",
+    "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-FilePreviews-Package",
+    "keywords": [
+        "API",
+        "File",
+        "Previews"
+    ],
+    "accounts": {
+        "domain": "filepreviews.io",
+        "credentials": [
+            "apiKey",
+            "apiSecret"
+        ]
+    },
+    "steps": [
+        "Register on the https:\/\/api.filepreviews.io",
+        "Create an application for a new API credentials https:\/\/api.filepreviews.io\/apps\/create\/",
+        "After creation app you will see API credentials in app settings."
+    ],
+    "events": [
+        {
+            "name": "webhookEvent",
+            "description": "For a better integration with FilePreviews we recommend using webhooks. Webhooks let you register a URL that we will POST anytime we have results for requests previews.",
+            "payload": {
+                "id": "3dc91079-fcfb-43cc-9d8b-18337c07093a",
+                "url": "https:\/\/api.filepreviews.io\/v2\/previews\/3dc91079-fcfb-43cc-9d8b-18337c07093a\/",
+                "status": "success",
+                "preview": {
+                    "page": 1,
+                    "size": {
+                        "height": "792",
+                        "width": "612"
+                    },
+                    "resized": false,
+                    "original_size": {
+                        "height": "792",
+                        "width": "612"
+                    },
+                    "url": "https:\/\/s3.amazonaws.com\/demo.filepreviews.io\/54669ba3c9471437a33bfddf1fe594cabec269e2ea8b9bf99ecbd58823cdd5c3\/sample_original_1.png",
+                    "requested_size": "original"
+                },
+                "thumbnails": [
+                    {
+                        "page": 1,
+                        "size": {
+                            "height": "792",
+                            "width": "612"
+                        },
+                        "resized": false,
+                        "original_size": {
+                            "height": "792",
+                            "width": "612"
+                        },
+                        "url": "https:\/\/s3.amazonaws.com\/demo.filepreviews.io\/54669ba3c9471437a33bfddf1fe594cabec269e2ea8b9bf99ecbd58823cdd5c3\/sample_original_1.png",
+                        "requested_size": "original"
+                    },
+                    {
+                        "page": 2,
+                        "size": {
+                            "height": "792",
+                            "width": "612"
+                        },
+                        "resized": false,
+                        "original_size": {
+                            "height": "792",
+                            "width": "612"
+                        },
+                        "url": "https:\/\/s3.amazonaws.com\/demo.filepreviews.io\/54669ba3c9471437a33bfddf1fe594cabec269e2ea8b9bf99ecbd58823cdd5c3\/sample_original_2.png",
+                        "requested_size": "original"
+                    },
+                    {
+                        "page": 3,
+                        "size": {
+                            "height": "792",
+                            "width": "612"
+                        },
+                        "resized": false,
+                        "original_size": {
+                            "height": "792",
+                            "width": "612"
+                        },
+                        "url": "https:\/\/s3.amazonaws.com\/demo.filepreviews.io\/54669ba3c9471437a33bfddf1fe594cabec269e2ea8b9bf99ecbd58823cdd5c3\/sample_original_3.png",
+                        "requested_size": "original"
+                    }
+                ],
+                "original_file": {
+                    "name": "sample",
+                    "size": 253440,
+                    "total_pages": 3,
+                    "metadata": {
+                        "exif": null,
+                        "raw": null,
+                        "psd": null,
+                        "ocr": [
+                            {
+                                "page": 1,
+                                "url": "https:\/\/s3.amazonaws.com\/demo.filepreviews.io\/54669ba3c9471437a33bfddf1fe594cabec269e2ea8b9bf99ecbd58823cdd5c3\/sample-1.jpg",
+                                "text": "Urna Semper\nInstructor\u00e2\u0080\u0099s Name\nCourse Title\n\nJuly 14, y\n\n    \n\n_I\u00e2\u0080\u009c\n\n \n\nLorem ipsum dolor sit amet. Ligula suspendisse nulla pretium. rhoncus tempor\nfermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit,\ncongue wisi enim nunc ultricies sit. magna tincidunt. Maecenas aliquam maecenas\nIigula nostra, accumsan taciti. Sociis mauris in integer, a dolor netus non dui aliquet,\nsagittis felis sodales, dolor sociis mauris, vel eu libero cras. Faucibus at. Arcu\nhabitasse elementum est, ipsum purus pede porttitor class. ut adipiscing, aliquet\n\n"
+                            },
+                            {
+                                "page": 2,
+                                "url": "https:\/\/s3.amazonaws.com\/demo.filepreviews.io\/54669ba3c9471437a33bfddf1fe594cabec269e2ea8b9bf99ecbd58823cdd5c3\/sample-2.jpg",
+                                "text": "sed auctor, imperdiet\n\n   \n\n \n\n\"Proin metus\nurna porta non,\ntincidunt\nornare. Class\naptent taciti\nsociosqu ad\nper inceptos\n\nhamenaeos.\" nec, \\ \u00e2\u0080\u0098 diam et,\n\n\u00e2\u0080\u0098-\n-Leo Praesen 7 J V 7 7\npharetra sodales,\n' feugiat\n\nullamcorper id tempor id vitae. Mauris pretium aliquet, lectus tincidunt. Porttitor\nmollis imperdiet libero senectus pulvinar. Etiam molestie mauris ligula iaoreet,\nvehicula eleifend. Repeilat orci erat et, sem cum.\n\n \n\n\\\n\n\\ ~adipiscing amet bibendum \\Nullam, lacus\nmolestie ut libero\n\nConsectetuer arcu ipsum ornare pellentesque vehicula, in vehicula diam, ornare\nmagna erat feiis wisi a risus. Justo fermentum id. Malesuada eleifend. tenor\nmolestie, a a vel et. Mauris at suspendisse, neque aliquam faucibus adipiscing,\nvivamus in. Wisi mattis leo suscipit nec amet, nisi fermentum tempor ac a, augue in\neleifend in venenatis, cras sit id in vestibulum felis in, sed ligula. In sodaies\nsuspendisse mauris quam etiam erat, quia tellus convaliis eros rhoncus diam orci,\nporta lectus esse adipiscing posuere et, nisl arcu vitae laoreet.\n\nDonec arcu risus diam amet sit. Congue tortor risus vestibulum commode nisl,\nluctus augue amet quis aenean maecenas sit, donec velit iusto, morbi felis eiit et\nnibh. Vestibulum volutpat dui lacus consectetuer, mauris at suspendisse, eu wisi\nrhoncus nibh velit, posuere sem in a sit. Sociosqu netus semper aenean suspendisse\ndictum, arcu enim conubia ieo nulla ac nibh, purus hendrerit ut mattis nec\nmaecenas, quo ac, vivamus praesent metus viverra ante. Natoque sed sit hendrerit,\ndapibus velit molestiae led a, ut lorem sit et lacus aliquam.\n\nUt facilisis ante in dui ac suscipit. turpis voluptatum donec, suspendisse, quasi\nluctus amet urna temper amet sit. Cras voiutpat mattis hasellus justo sed, feugiat\nnunc praesent. Quam ac ligula risus lectus dapibus, nunc lectus velit, vel,\nvestibulum in tellus nam, eros amet hasellus facilisis. Vehicula sed, class dignissim\nullamcorper eros, mauris consequat ut lacinia. Aliquam amet est, quam leo\nmaecenas mauris turpis leo pharetra. vuiputate lacus. Ad ornare donec, fringilla\n\n"
+                            },
+                            {
+                                "page": 3,
+                                "url": "https:\/\/s3.amazonaws.com\/demo.filepreviews.io\/54669ba3c9471437a33bfddf1fe594cabec269e2ea8b9bf99ecbd58823cdd5c3\/sample-3.jpg",
+                                "text": "feugiat augue imperdiet Iaoreet, ipsum enim sit lectus felis at, aliquam donec pede,\nluctus platea etiam mauris ut. Dui vel diam, vitae et scelerisque erat volutpat\nviverra velit, risus pellentesque tellus nullam nibh, morbi posuere.\n\n"
+                            }
+                        ],
+                        "checksum": "02e964c1515bd26fcb2046c0d4a0dde4",
+                        "multimedia": null
+                    },
+                    "extension": "doc",
+                    "encoding": "application\/mswordbinary",
+                    "mimetype": "application\/msword",
+                    "type": "application"
+                },
+                "user_data": []
+            },
+            "steps": [
+                "Webhooks can be configured in each of your application's settings under Callback URL",
+                "Set callback url field to __WEBHOOK_URL__",
+                "Also, you can provide url callback in createPreview endpoint (callbackUrl field)."
+            ],
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "String",
+                    "info": "Your apiKey.",
+                    "required": false
+                }
+            ]
+        }
+    ],
+    "blocks": [
+        {
+            "name": "createPreview",
+            "description": "Create file preview.Returned response can be used for polling until results are available and return an HTTP status code of 200. If application has a Callback URL specified, results will also be posted via webhooks.",
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "credentials",
+                    "info": "Your API key.",
+                    "required": true
+                },
+                {
+                    "name": "apiSecret",
+                    "type": "credentials",
+                    "info": "Your API secret.",
+                    "required": true
+                },
+                {
+                    "name": "fileUrl",
+                    "type": "String",
+                    "info": "File url to preview.",
+                    "required": true,
+                    "vendorSchema": {
+                        "name": "url"
+                    }
+                },
+                {
+                    "name": "sizes",
+                    "type": "List",
+                    "structure":{
+                        "name":"size",
+                        "type":"String",
+                        "info":"Size of extracted thumbnails. Example - 300x400."
+                    },
+                    "info": "An array of sizes of the extracted thumbnails, in pixels. Expressed as widthxheight. Specifying only the width(e.g `300`) will generate a thumbnail with a fixed width and varying height. You can also only shrink larger images to fit into the give size and never enlarge(e.g `300x400>`).",
+                    "required": false
+                },
+                {
+                    "name": "format",
+                    "type": "Select",
+                    "options": [
+                        "jpg",
+                        "jpeg",
+                        "png"
+                    ],
+                    "info": "The format of the extracted thumbnails.",
+                    "required": false
+                },
+                {
+                    "name": "metadata",
+                    "type": "List",
+                    "structure": {
+                        "name": "value",
+                        "type": "Select",
+                        "options": [
+                            "ocr",
+                            "psd",
+                            "exif",
+                            "ocr",
+                            "checksum",
+                            "multimedia",
+                            "webpage",
+                            "sketch"
+                        ],
+                        "info": "String value of additional metadata to extract."
+                    },
+                    "info": "An list of string values of additional metadata to extract.",
+                    "required": false
+                },
+                {
+                    "name": "pages",
+                    "type": "String",
+                    "info": "The document pages that you want to extract thumbnails for. You can specify a range or individual pages separated by commas. Example: `1-3` or `1,3,5`. You can also specify the special value of `all` to extract all pages. Default value is `1`.",
+                    "required": false
+                },
+                {
+                    "name": "callbackUrl",
+                    "type": "String",
+                    "info": "A URL that we will POST anytime results for requests previews are ready.",
+                    "required": false,
+                    "vendorSchema": {
+                        "name": "callback_url"
+                    }
+                }
+            ],
+            "vendorRequest": {
+                "url": "https:\/\/api.filepreviews.io\/v2\/previews\/",
+                "method": "post",
+                "requestParameters": [
+                    {
+                        "type": "json",
+                        "parameters": [
+                            "url",
+                            "callback_url",
+                            "pages",
+                            "metadata",
+                            "format"
+                        ]
+                    }
+                ]
+            },
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "getPreview",
+            "description": "Get file preview.Returned response can be used for polling until results are available and return an HTTP status code of 200. If application has a Callback URL specified, results will also be posted via webhooks.",
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "credentials",
+                    "info": "Your API key.",
+                    "required": true
+                },
+                {
+                    "name": "apiSecret",
+                    "type": "credentials",
+                    "info": "Your API secret.",
+                    "required": true
+                },
+                {
+                    "name": "previewId",
+                    "type": "String",
+                    "info": "Preview id from createPreview endpoint.",
+                    "required": true
+                }
+            ],
+            "vendorRequest": {
+                "url": "https:\/\/api.filepreviews.io\/v2\/previews\/{$data['previewId']}",
+                "method": "get",
+                "requestParameters": [
+                ]
+            },
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        }
+    ]
+}
